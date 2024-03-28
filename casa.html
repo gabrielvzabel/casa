@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Simples</title>
+<style>
+  body {
+    background-color: #87CEEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .house {
+    width: 600px;
+    height: 600px;
+    position: relative;
+  }
+
+  .roof {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 200px solid #8B4513; 
+    position: absolute;
+    top: 0;
+  }
+
+  .wall {
+    width: 600px;
+    height: 400px;
+    background-color: #FFD700;
+    position: absolute;
+    top: 200px;
+  }
+
+  .door {
+    width: 160px;
+    height: 320px;
+    background-color: #8B4513;
+    position: absolute;
+    top: 280px;
+    left: 220px;
+  }
+
+  .ground {
+    width:400%;
+    height: 200px;
+    background-color: #271102;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .window {
+    width: 240px;
+    height: 240px;
+    background-color: #add8e6;
+    border: 6px solid #000;
+    position: absolute;
+  }
+
+  .windowleft {
+    top: 90px;
+    left: 60px;
+  }
+
+  .windowright {
+    top: 90px;
+    right: 60px;
+  }
+</style>
+</head>
+<body>
+<div class="house">
+  <div class="roof"></div>
+  <div class="wall"> 
+    <div class="windowleft"></div>
+    <div class="windowright"></div>
+  </div>
+  <div class="door"></div>
+</div>
+<div class="ground" ></div>
+</div>
+</body>
+</html>
